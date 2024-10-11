@@ -29,16 +29,16 @@
 
 ## Варіант 2
 
-
    1. Написати функцію remove-seconds-and-thirds , яка видаляє зі списку кожен другий і третій елементи:
-
-CL-USER> (remove-seconds-and-thirds '(A B C D E F G))
-(A D G)
-
+      ```lisp
+       CL-USER> (remove-seconds-and-thirds '(A B C D E F G))
+       (A D G)
+      ```
    2. Написати функцію list-set-intersection , яка визначає перетин двох множин, заданих списками атомів:
-
-CL-USER> (list-set-intersection '(1 2 3 4) '(3 4 5 6))
-(3 4) ; порядок може відрізнятись
+      ```lisp
+       CL-USER> (list-set-intersection '(1 2 3 4) '(3 4 5 6))
+       (3 4) ; порядок може відрізнятись
+      ```
 
 ## Лістинг функції remove-seconds-and-thirds
 ```lisp
