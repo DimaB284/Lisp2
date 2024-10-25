@@ -30,18 +30,16 @@
 (defun element-in-list (elem lst)
   (cond
     ((null lst) nil)               
-    ((eql elem (car lst)) t)         
+    ((equalp elem (car lst)) t)         
     (t (element-in-list elem (cdr lst)))))  
-ELEMENT-IN-LIST
 
 (defun list-set-intersection (list1 list2)
- 
   (cond
     ((null list1) nil)  
     ((element-in-list (car list1) list2)
      (cons (car list1)  
            (list-set-intersection (cdr list1) list2)))  
-    (t (list-set-intersection (cdr list1) list2))))  
+    (t (list-set-intersection (cdr list1) list2)))) 
 
 
 (defun run-list-set-intersection-tests ()
