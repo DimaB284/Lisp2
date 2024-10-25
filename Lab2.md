@@ -91,7 +91,6 @@ NIL
 ELEMENT-IN-LIST
 
 [5]> (defun list-set-intersection (list1 list2)
- 
   (cond
     ((null list1) nil)  
     ((element-in-list (car list1) list2)
