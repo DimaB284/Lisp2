@@ -83,7 +83,7 @@ NIL
 [4]> (defun element-in-list (elem lst)
   (cond
     ((null lst) nil)               
-    ((equalp elem (car lst)) t)         
+    ((eql elem (car lst)) t)         
     (t (element-in-list elem (cdr lst)))))  
 ELEMENT-IN-LIST
 
