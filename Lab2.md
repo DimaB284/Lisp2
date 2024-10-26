@@ -46,8 +46,6 @@
 [1]> (defun remove-seconds-and-thirds (lst)
   (cond
     ((null lst) nil)
-    ((null (cdr lst)) (list (car lst)))
-    ((null (cddr lst)) (list (car lst)))
     (t (cons (car lst) 
              (remove-seconds-and-thirds (cdr (cdr (cdr lst))))))))
 REMOVE-SECONDS-AND-THIRDS
