@@ -43,14 +43,13 @@
 ## Лістинг функції remove-seconds-and-thirds
 ```lisp
 ;1-st task
-[1]> (defun remove-seconds-and-thirds (list)
+[1]> (defun remove-seconds-and-thirds (lst)
   (cond
-    ((null list) nil)
-    ((null (cdr list)) (list (car list)))
-    ((null (cdr (cdr list))) (list (car list)))
-    (t
-     (cons (car list)
-           (remove-seconds-and-thirds (cdr (cdr (cdr list))))))))
+    ((null lst) nil)
+    ((null (cdr lst)) (list (car lst)))
+    ((null (cddr lst)) (list (car lst)))
+    (t (cons (car lst) 
+             (remove-seconds-and-thirds (cdr (cdr (cdr lst))))))))
 REMOVE-SECONDS-AND-THIRDS
 ```
 
